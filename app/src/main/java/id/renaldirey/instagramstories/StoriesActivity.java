@@ -46,21 +46,6 @@ public class StoriesActivity extends AppCompatActivity implements StoriesProgres
             }
 
             return true;
-//            switch (event.getAction()) {
-//                case MotionEvent.ACTION_DOWN:
-//                    pressTime = System.currentTimeMillis();
-//                    storiesProgressView.pause();
-//                    Log.e(TAG, "press");
-//                    return false;
-//
-//                case MotionEvent.ACTION_UP:
-//                    long now = System.currentTimeMillis();
-//                    storiesProgressView.resume();
-//                    Log.e(TAG, "release");
-//                    return limit < now - pressTime;
-//            }
-//
-//            return false;
         }
     };
     @Override
@@ -88,10 +73,6 @@ public class StoriesActivity extends AppCompatActivity implements StoriesProgres
 
         tvUsername.setText("Renaldi");
 
-//        for(int i=1;i<10;i++) {
-//            images.add(R.drawable.content);
-//        }
-
         images.add(R.drawable.content2);
         images.add(R.drawable.content3);
         images.add(R.drawable.content4);
@@ -112,14 +93,6 @@ public class StoriesActivity extends AppCompatActivity implements StoriesProgres
                 storiesProgressView.skip();
             }
         });
-
-//        ivStories.setOnLongClickListener(new View.OnLongClickListener() {
-//            @Override
-//            public boolean onLongClick(View v) {
-//                storiesProgressView.pause();
-//                return false;
-//            }
-//        });
 
         setupStories();
     }
